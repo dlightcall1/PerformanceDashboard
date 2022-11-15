@@ -8,7 +8,7 @@
     -->
     <html>
     <head>
-        <meta http-equiv="refresh" content="100">
+        <meta http-equiv="refresh" content="500">
 
     <title>Engie Energy Access Uganda</title>
     <link rel="shortcut icon" href="images/fenixintl.ico">
@@ -107,7 +107,7 @@
         if (current_idx == 0) {
             if (!slide_idx) { slide_idx = 1; }
             current_idx = slide_idx;
-            content.src = slides[current_idx][3];
+            content.src = slides[current_idx][2];
             document.getElementById('play').style.display = "none";
             document.getElementById('pause').style.display = "block";
             show_timer = setTimeout("Navigate()", slides[current_idx][0]*1000);
@@ -115,7 +115,7 @@
         }
         if (slide_idx) {
             current_idx = slide_idx;
-            content.src = slides[current_idx][3];
+            content.src = slides[current_idx][2];
             document.getElementById('play').style.display = "block";
             document.getElementById('pause').style.display = "none";
             return;
@@ -170,7 +170,7 @@
             document.getElementById(id).style.display = "none";
             break;
         case "content":
-            content.src = slides[current_idx][3];
+            content.src = slides[current_idx][2];
             //setTimeout("opacity('content', 0, 100, 500)", 1000);
             break;
         default:
